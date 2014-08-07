@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>09 More Then One Host - Ali.MD CSS Page Layouts</title>
+<style type="text/css">
+<!--
+*{
+	padding :0;
+	margin  :0;
+}
+
+div.container{
+	width  :950px;
+	margin :0 auto;
+}
+
+div{
+	/* outline:1px solid red; */
+}
+
+.badboy{
+	clear      :both;
+	width      :0 !important;
+	height     :0 !important;
+	min-height :0 !important;
+	min-width  :0 !important;
+	float      :none !important;
+	overflow   :hidden;
+}
+
+div.floor1,
+div.floor2,
+div.floor3{
+	background :#999;
+	margin-top :10px;
+	padding-top: 1px;
+}
+
+/* Party at floor 1
+-------------------------------------------------- */
+div.floor1 div.host1{
+	float      :left;
+	width      :150px;
+	min-height :400px;
+	background :#696;
+}
+
+div.floor1 div.host2{
+	float      :right;
+	width      :150px;
+	min-height :430px;
+	background :#669;
+}
+
+div.floor1 div.guest{
+	margin     :0 155px; /* left and right */
+	min-height :350px;
+	background :#915;
+	margin-top :10px;
+}
+
+/* Party at floor 2
+-------------------------------------------------- */
+div.floor2 div.host1{
+	float      :left;
+	width      :150px;
+	min-height :400px;
+	background :#696;
+}
+
+div.floor2 div.host2{
+	float       :left;
+	width       :150px;
+	min-height  :430px;
+	margin-left :5px;
+	background  :#669;
+}
+
+div.floor2 div.guest{
+	margin-left :310px;
+	min-height  :350px;
+	background  :#915;
+}
+
+/* Party at floor 3
+-------------------------------------------------- */
+div.floor3 div.host1,
+div.floor3 div.host2,
+div.floor3 div.host3,
+div.floor3 div.host4{
+	float        :left;
+	width        :150px;
+	min-height   :300px;
+	margin-right :5px;
+	background   :#669;
+}
+
+div.floor3 div.guest{
+	margin-left :620px; /* 4x(150+5) */
+	min-height  :280px;
+	background  :#915;
+}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="floor1">
+		<div class="host1">Left Panel (Host)</div>
+		<div class="host2">Right Panel (Host)</div>
+		<div class="guest">Center Pannel (Guest)</div>
+		<div class="badboy"></div>
+	</div>
+	<div class="floor2">
+		<div class="host1">Left Panel 1 (Host)</div>
+		<div class="host2">Left Panel 2 (Host)</div>
+		<div class="guest">Right Pannel (Guest)</div>
+		<div class="badboy"></div>
+	</div>
+	<div class="floor3">
+		<div class="host1">Left Panel 1 (Host)</div>
+		<div class="host2">Left Panel 2 (Host)</div>
+		<div class="host3">Left Panel 3 (Host)</div>
+		<div class="host4">Left Panel 4 (Host)</div>
+		<div class="guest">Right Pannel (Guest)</div>
+		<div class="badboy"></div>
+	</div>
+</div>
+</body>
+</html>
